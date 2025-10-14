@@ -1,9 +1,9 @@
 Name: YOUR NAME HERE
 
-| Date    |  Time  |                                     Update |
-|:--------|:------:|-------------------------------------------:|
-| April 5 | 9-10pm | I tried to write abstract, efficient code. |
-|         |        |                                            |
+| Date   |   Time   |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         Update |
+|:-------|:--------:|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+| Oct 13 | 8:15-9pm | I found a solution to the code but I did it in a very crude manner. I did what I believe to be is what I did for CS1. I brut-forced the solution whole iterative loops. I had some trouble at first on how to count the longest STR repetition instead of just the number of STRs in the total sequence. This was easily fixed though by resetting count after every break in the pattern and then just comparing count with longest count until the end. This is a very rough draft solution that works. Next, I will try to find a more efficient way to solve the solution. |
+|        |          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 
 
 To add a new row to the table, click into a cell and then hit shift-enter.
