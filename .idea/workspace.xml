@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d822f69-9e3c-4e2b-8ee1-11779bb646bd" name="Changes" comment="">
+    <list default="true" id="6d822f69-9e3c-4e2b-8ee1-11779bb646bd" name="Changes" comment="Worklog 2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WORK_LOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/WORK_LOG.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DNA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DNA.java" afterDir="false" />
@@ -40,20 +40,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;JUnit.DNATest.executor&quot;: &quot;Run&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.DNATest.executor": "Debug",
+    "JUnit.DNATest.testBasic.executor": "Run",
+    "JUnit.DNATest.testMore.executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true"
   }
-}</component>
-  <component name="RunManager">
+}]]></component>
+  <component name="RunManager" selected="JUnit.DNATest.testBasic">
     <configuration name="DNATest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DNA 2.0 Student Code" />
       <option name="PACKAGE_NAME" value="" />
@@ -63,8 +65,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DNATest.testBasic" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DNA 2.0 Student Code" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="DNATest" />
+      <option name="METHOD_NAME" value="testBasic" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DNATest.testMore" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DNA 2.0 Student Code" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="DNATest" />
+      <option name="METHOD_NAME" value="testMore" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DNATest.testBasic" />
+        <item itemvalue="JUnit.DNATest.testMore" />
         <item itemvalue="JUnit.DNATest" />
       </list>
     </recent_temporary>
@@ -78,9 +102,29 @@
       <option name="presentableId" value="Default" />
       <updated>1722368227958</updated>
     </task>
+    <task id="LOCAL-00001" summary="Initial Commit + Crude Attempt + worklog 1">
+      <option name="closed" value="true" />
+      <created>1760415979432</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1760415979432</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Worklog 2">
+      <option name="closed" value="true" />
+      <created>1760554392183</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1760554392183</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Initial Commit + Crude Attempt + worklog 1" />
+    <MESSAGE value="Worklog 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Worklog 2" />
   </component>
 </project>
