@@ -13,41 +13,57 @@
 public class DNA {
 
     public static final int EXTENDED_ASCII = 256;
-    public static final int P = 2147483647;
+    public static final long P = 29245776433644439L;
 
 
     public static int STRCount(String sequence, String STR) {
         int m = STR.length();
         int n = sequence.length();
 
-        int strHash = hash(STR);
-        int seqHash = hash(sequence.substring(0, m - 1));
+        long strHash = hash(STR);
+        long seqHash = hash(sequence.substring(0, m));
 
         int count = 0;
         int longestCount = 0;
 
-        for (int i = m; i < n; i++) {
+        long radixFirst = 1;
+        for(int i = 0; i < m - 1; i++) {
+            radixFirst *= EXTENDED_ASCII % P;
+        }
+
+        for (int i = m; i <= n - m; i++) {
             if (strHash == seqHash) {
-                i += (m - 1);
+                i += m - 1;
                 // begin checking for consecutive appearances
                 count++;
                 if(count > longestCount) {
                     longestCount = count;
                 }
+                seqHash = hash(sequence.substring(i - (m - 1), i + 1));
             }
             else {
                 count = 0;
+                seqHash = (seqHash + P - sequence.charAt(i - m) * radixFirst % P) % P;
+                seqHash = (seqHash * EXTENDED_ASCII + sequence.charAt(i)) % P;
             }
-            seqHash = hash(sequence.substring(1 + (i - m), i));
-
+            String hash = sequence.substring(i-m+1,i+1);
+        }
+        // Account of edge case of end
+        if(seqHash == strHash) {
+            count++;
+            if(count > longestCount) {
+                longestCount = count;
+            }
         }
     return longestCount;
     }
 
-    public static int hash(String s) {
-        if(s.isEmpty()) {
-            return 0;
+    public static long hash(String s) {
+        int length = s.length();
+        long h = 0;
+        for (int i = 0; i < length; i++) {
+            h = (h * EXTENDED_ASCII + s.charAt(i)) % P;
         }
-        return (int) (hash(s.substring(1)) + s.charAt(0) * Math.pow(EXTENDED_ASCII, s.length() - 1) % P);
+        return h;
     }
 }
